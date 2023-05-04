@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+  <g id="Group_80642" data-name="Group 80642" transform="translate(10001 3468)">
+    <g id="Group_80639" data-name="Group 80639" transform="translate(0 91)">
+      <g id="Group_80633" data-name="Group 80633" transform="translate(0 58)">
+        <g id="Rectangle_55" data-name="Rectangle 55" transform="translate(-10001 -3617)" fill="rgba(255,255,255,0)" stroke="rgba(112,112,112,0)" stroke-width="1">
+          <rect width="13" height="13" stroke="none"/>
+          <rect x="0.5" y="0.5" width="12" height="12" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <path id="Path_631" data-name="Path 631" d="M103.193,28.017A.009.009,0,0,0,103.2,28l-.122-.281c0-.007-.009-.007-.012,0L102.94,28a.009.009,0,0,0,.009.013Z" transform="translate(-10097.954 -3493.406)" fill="#ced1de"/>
+    <path id="location_3_" data-name="location (3)" d="M13.919,6.977a4.956,4.956,0,0,1-1.092,3.111h0S11.1,12.4,9.761,14.041a1.05,1.05,0,0,1-1.637,0c-1.336-1.635-3.063-3.948-3.063-3.948l0-.005a4.977,4.977,0,1,1,8.862-3.111ZM10.8,6.955A1.858,1.858,0,1,1,8.942,5.1,1.858,1.858,0,0,1,10.8,6.955Z" transform="translate(-10003.441 -3469.717)" fill="#7577f6" fill-rule="evenodd"/>
+  </g>
+</svg>

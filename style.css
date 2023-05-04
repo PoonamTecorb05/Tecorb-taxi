@@ -1,0 +1,23 @@
+/* Note that this is using the experimental version of Tailwind CSS that comes with more utility classes compared to the default */
+.text-smMain{
+    font-size: 11px;
+}
+@media(min-width:320px) and (max-width:992px){
+    .logoSec{
+        position: absolute;
+        left: 0;
+    }
+    .sidebar{
+    position: fixed;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    z-index: 1050;
+    overflow: hidden;
+    outline: 0;
+    width: 270px;
+    height: 100%;
+    left: unset!important;
+    background: #fff;
+    }
+}

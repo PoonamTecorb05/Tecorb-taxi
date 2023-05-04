@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+  <g id="Group_80646" data-name="Group 80646" transform="translate(10001 3428)">
+    <g id="Group_80644" data-name="Group 80644">
+      <g id="Group_80639" data-name="Group 80639" transform="translate(0 131)">
+        <g id="Group_80633" data-name="Group 80633" transform="translate(0 58)">
+          <g id="Rectangle_55" data-name="Rectangle 55" transform="translate(-10001 -3617)" fill="rgba(255,255,255,0)" stroke="rgba(112,112,112,0)" stroke-width="1">
+            <rect width="13" height="13" stroke="none"/>
+            <rect x="0.5" y="0.5" width="12" height="12" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <path id="Path_631" data-name="Path 631" d="M103.193,28.017A.009.009,0,0,0,103.2,28l-.122-.281c0-.007-.009-.007-.012,0L102.94,28a.009.009,0,0,0,.009.013Z" transform="translate(-10097.954 -3453.406)" fill="#ced1de"/>
+      <path id="chat_9_" data-name="chat (9)" d="M10.05,1.7A5.814,5.814,0,0,0,.736,8.411l-.6,2.634a.478.478,0,0,0,.571.571l2.634-.6A5.814,5.814,0,0,0,10.05,1.7Zm-2.9,5.559H3.514a.478.478,0,1,1,0-.955H7.152a.478.478,0,1,1,0,.955Zm1.213-1.94H3.514a.478.478,0,0,1,0-.955H8.365a.478.478,0,0,1,0,.955Z" transform="translate(-10000.439 -3427.316)" fill="#cbd2e0"/>
+    </g>
+  </g>
+</svg>

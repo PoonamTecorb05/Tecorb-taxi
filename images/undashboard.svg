@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+  <g id="Group_80629" data-name="Group 80629" transform="translate(10001 3667)">
+    <g id="Group_80630" data-name="Group 80630">
+      <g id="Rectangle_55" data-name="Rectangle 55" transform="translate(-10001 -3667)" fill="rgba(255,255,255,0)" stroke="rgba(112,112,112,0)" stroke-width="1">
+        <rect width="13" height="13" stroke="none"/>
+        <rect x="0.5" y="0.5" width="12" height="12" fill="none"/>
+      </g>
+      <path id="Icon_material-dashboard" data-name="Icon material-dashboard" d="M4.5,11.087H9.77V4.5H4.5Zm0,5.27H9.77V12.4H4.5Zm6.587,0h5.27V9.77h-5.27Zm0-11.857V8.452h5.27V4.5Z" transform="translate(-10004.929 -3670.929)" fill="#cdd1e0"/>
+    </g>
+  </g>
+</svg>

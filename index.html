@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Online Courses Dashboard</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.12/tailwind-experimental.min.css'>
+  <link rel="stylesheet" href="./style.css">
+  <script  src="./script.js"></script>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+
+  <body class="flex bg-gray-100 min-h-screen">
+    <aside class="hidden sm:flex sm:flex-col bg-white">
+      <a href="#" class="inline-flex items-center justify-center h-20 lg:h-28 w-60 logoSec">
+        <img src="images/logo.svg" alt="" />
+      </a>
+
+      <div id="menu"
+        class="hidden lg:flex  flex-col top-14 left-0 w-14 hover:w-60 md:w-60   h-full text-white transition-all duration-300 border-none z-10 sidebar">
+        <div class="overflow-y-auto overflow-x-hidden flex flex-col justify-between flex-grow">
+          <ul class="flex flex-col py-4 space-y-1">
+
+            <li>
+              <a href="#"
+                class="relative flex flex-row items-center h-13 focus:outline-none hover:bg-purple-100 dark:hover:bg-purple-100 text-gray-400 hover:text-purple-600 border-l-4 border-transparent hover:border-purple-600 dark:hover:border-purple-600">
+                <span class="inline-flex justify-center items-center ml-4 ">
+                  <img src="images/unlive.svg" alt="" class="w-5 h-5" />
+                </span>
+                <span class="ml-2 text-md font-medium text-stone-200 tracking-wide truncate">Live</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#"
+                class="relative flex flex-row items-center h-13 focus:outline-none hover:bg-purple-100 dark:hover:bg-purple-100 text-purple-600 bg-purple-100 hover:text-purple-600 border-l-4 border-transparent hover:border-purple-600 dark:hover:border-purple-600 border-purple-600">
+                <span class="inline-flex justify-center items-center ml-4 ">
+                  <img src="images/dashboard.svg" alt="" class="w-5 h-5" />
+                </span>
+                <span class="ml-2 text-md font-medium text-stone-200 tracking-wide truncate">Dashboard</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#"
+                class="relative flex flex-row items-center h-13 focus:outline-none hover:bg-purple-100 dark:hover:bg-purple-100 text-gray-400 hover:text-purple-600 border-l-4 border-transparent hover:border-purple-600 dark:hover:border-purple-600">
+                <span class="inline-flex justify-center items-center ml-4 ">
+                  <img src="images/unanalytics.svg" alt="" class="w-5 h-5" />
+                </span>
+                <span class="ml-2 text-md font-medium text-stone-200 tracking-wide truncate">Analytics</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#"
+                class="relative flex flex-row items-center h-13 focus:outline-none hover:bg-purple-100 dark:hover:bg-purple-100 text-gray-400 hover:text-white-800 border-l-4 border-transparent hover:border-purple-600 dark:hover:border-purple-600">
+                <span class="inline-flex justify-center items-center ml-4 ">
+                  <img src="images/unlive.svg" alt="" class="w-5 h-5" />
+                </span>
+                <span class="ml-2 text-md font-medium text-stone-200 tracking-wide truncate">Sub-Admin</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#"
+                class="relative flex flex-row items-center h-13 focus:outline-none hover:bg-purple-100 dark:hover:bg-purple-100 text-gray-400 hover:text-white-800 border-l-4 border-transparent hover:border-purple-600 dark:hover:border-purple-600">
+                <span class="inline-flex justify-center items-center ml-4 ">
+                  <img src="images/unreport.svg" alt="" class="w-5 h-5" />
+                </span>
+                <span class="ml-2 text-md font-medium text-stone-200 tracking-wide truncate">Reports</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#"
+                class="relative flex flex-row items-center h-13 focus:outline-none hover:bg-purple-100 dark:hover:bg-purple-100 text-gray-400 hover:text-white-800 border-l-4 border-transparent hover:border-purple-600 dark:hover:border-purple-600">
+                <span class="inline-flex justify-center items-center ml-4 ">
+                  <img src="images/unmanagetexi.svg" alt="" class="w-5 h-5" />
+                </span>
+                <span class="ml-2 text-md font-medium text-stone-200 tracking-wide truncate">Manage Taxi</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="relative flex flex-row items-center h-13 focus:outline-none hover:bg-purple-100 dark:hover:bg-purple-100 text-gray-400 hover:text-white-800 border-l-4 border-transparent hover:border-purple-600 dark:hover:border-purple-600">
+                <span class="inline-flex justify-center items-center ml-4 ">
+                  <img src="images/unlocation.svg" alt="" class="w-5 h-5" />
+                </span>
+                <span class="ml-2 text-md font-medium text-stone-200 tracking-wide truncate">Manage Places</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="relative flex flex-row items-center h-13 focus:outline-none hover:bg-purple-100 dark:hover:bg-purple-100 text-gray-400 hover:text-white-800 border-l-4 border-transparent hover:border-purple-600 dark:hover:border-purple-600">
+                <span class="inline-flex justify-center items-center ml-4 ">
+                  <img src="images/unmassage.svg" alt="" class="w-5 h-5" />
+                </span>
+                <span class="ml-2 text-md font-medium text-stone-200 tracking-wide truncate">Messages</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="relative flex flex-row items-center h-13 focus:outline-none hover:bg-purple-100 dark:hover:bg-purple-100 text-gray-400 hover:text-white-800 border-l-4 border-transparent hover:border-purple-600 dark:hover:border-purple-600">
+                <span class="inline-flex justify-center items-center ml-4 ">
+                  <img src="images/unnotification.svg" alt="" class="w-5 h-5" />
+                </span>
+                <span class="ml-2 text-md font-medium text-stone-200 tracking-wide truncate">Notification</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#"
+                class="relative flex flex-row items-center h-13 focus:outline-none hover:bg-purple-100 dark:hover:bg-purple-100 text-gray-400 hover:text-white-800 border-l-4 border-transparent hover:border-purple-600 dark:hover:border-purple-600">
+                <span class="inline-flex justify-center items-center ml-4 ">
+                  <img src="images/unsetting.svg" alt="" class="w-5 h-5" />
+                </span>
+                <span class="ml-2 text-md font-medium text-stone-200 tracking-wide truncate">Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="relative flex flex-row items-center h-13 focus:outline-none hover:bg-purple-100 dark:hover:bg-purple-100 text-gray-400 hover:text-white-800 border-l-4 border-transparent hover:border-purple-600 dark:hover:border-purple-600">
+                <span class="inline-flex justify-center items-center ml-4 ">
+                  <img src="images/unlogout.svg" alt="" class="w-5 h-5" />
+                </span>
+                <span class="ml-2 text-md font-medium text-stone-200 tracking-wide truncate">Logout</span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </aside>
+    <div class="flex-grow text-gray-800">
+      <header class="flex items-center h-20 px-2 sm:px-6 ">
+        <button
+          class="block sm:hidden relative flex-shrink-0 p-2 mr-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800 focus:bg-gray-100 focus:text-gray-800 rounded-full">
+          <span class="sr-only">Menu</span>
+          <svg aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+          </svg>
+        </button>
+        <div class="relative w-full lg:max-w-md max-w-xs lg:-ml-2 ml-16">
+          <svg aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"
+            class="absolute h-6 w-6 mt-2.5 ml-2 text-gray-400">
+            <path fill-rule="evenodd"
+              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+              clip-rule="evenodd" />
+          </svg>
+          <input type="text" role="search" placeholder="Search for anything..."
+            class="py-2 pl-10 pr-4 w-full border-4 border-transparent placeholder-gray-400 focus:bg-gray-50 rounded-lg" />
+        </div>
+        <div class="flex flex-shrink-0 items-center ml-auto">
+          <button
+            class="inline-flex items-center hover:bg-gray-100 focus:bg-gray-100 border border-gray-100 rounded-lg">
+            <span class="sr-only">User Menu</span>
+            <span class="h-12 w-12 mr-2 sm:mr-3 mr-2 bg-gray-100 rounded-full overflow-hidden shadow">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="user profile photo"
+                class="h-full w-full object-cover">
+            </span>
+            <div class="hidden md:flex md:flex-col text-left md:items-start md:leading-tight mr-3">
+              <span class="font-semibold text-left">George Munoz</span>
+              <span class="text-smMain text-gray-400 text-left">Last Login : 1/7/19, 10:30pm</span>
+            </div>
+
+            <svg aria-hidden="true" viewBox="0 0 20 20" fill="currentColor"
+              class="hidden sm:block h-6 w-6 text-gray-300">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+
+        </div>
+        <button  id="menu-button"  onclick="ShowDiv11()">
+          <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer lg:hidden  block"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        </button>
+       
+      </header>
+      <main class="p-2 sm:p-6 space-y-6">
+
+        <section class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+          <div class="flex items-center px-5 py-8 bg-white shadow rounded-lg">
+            <div class="inline-flex flex-shrink-0 items-center justify-center h-10 w-10  mr-5">
+              <img src="images/carsteeringwheel.svg" alt="" class="w-full h-full" />
+            </div>
+            <div>
+              <span class="block text-4xl font-bold">6.8L</span>
+              <span class="block text-smMain text-gray-400">Kiometers Driven</span>
+            </div>
+            <div class="ml-auto text-center">
+              <img src="images/arrowdropup.svg" class="mx-auto mb-1">
+              <span class="text-smMain text-gray-400 font-normal block truncate">30.36%</span>
+            </div>
+          </div>
+          <div class="flex items-center px-5 py-8 bg-white shadow rounded-lg">
+            <div class="inline-flex flex-shrink-0 items-center justify-center h-10 w-10  mr-5">
+              <img src="images/Managetexi.svg" alt="" class="w-full h-full" />
+            </div>
+            <div>
+              <span class="block text-4xl font-bold">1550</span>
+              <span class="block text-smMain text-gray-400">Trips Completed</span>
+            </div>
+            <div class="ml-auto text-center">
+              <img src="images/arrowdropup.svg" class="mx-auto mb-1">
+              <span class="text-smMain text-gray-400 font-normal block truncate">30.36%</span>
+            </div>
+          </div>
+          <div class="flex items-center px-5 py-8 bg-white shadow rounded-lg">
+            <div class="inline-flex flex-shrink-0 items-center justify-center h-10 w-10  mr-5">
+              <img src="images/customer.svg" alt="" class="w-full h-full" />
+            </div>
+            <div>
+              <span class="inline-block text-4xl font-bold">5.5k</span>
+              <span class="block text-smMain text-gray-400">Satisfied Customer</span>
+            </div>
+            <div class="ml-auto text-center">
+              <img src="images/arrowdropup.svg" class="mx-auto mb-1">
+              <span class="text-smMain text-gray-400 font-normal block truncate">30.36%</span>
+            </div>
+          </div>
+          <div class="flex items-center px-5 py-8 bg-white shadow rounded-lg">
+            <div class="inline-flex flex-shrink-0 items-center justify-center h-10 w-10  mr-5">
+              <img src="images/carsteeringwheel.svg" alt="" class="w-full h-full" />
+            </div>
+            <div>
+              <span class="block text-4xl font-bold">65.5L</span>
+              <span class="block text-smMain text-gray-400">Revenu Generated</span>
+            </div>
+            <div class="ml-auto text-center">
+              <img src="images/arrowdropup.svg" class="mx-auto mb-1">
+              <span class="text-smMain text-gray-400 font-normal block truncate">30.36%</span>
+            </div>
+          </div>
+        </section>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="flex flex-col md:col-span-3 md:row-span-2 ">
+            <div class="bg-white shadow rounded-lg">
+              <div class="px-6 py-5   border-b border-gray-100">
+                <div class="flex items-center">
+                  <span class=" text-smMain text-gray-400 font-medium">Booking Habits</span>
+                  <button type="button"
+                    class="inline-flex ml-4 justify-center border border-gray-300 px-3 py-1 rounded-md px-1 -mr-1 bg-white text-smMain leading-5 font-normal text-gray-300 hover:text-gray-400"
+                    id="options-menu" aria-haspopup="true" aria-expanded="true">
+                    Last 30 days
+                    <svg class="-mr-1 ml-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                      fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <button type="button"
+                    class="inline-flex ml-4 justify-center border border-gray-300 px-3 py-1 rounded-md px-1 -mr-1 bg-white text-smMain leading-5 font-normal text-gray-300 hover:text-gray-400"
+                    id="options-menu" aria-haspopup="true" aria-expanded="true">
+                    Vehicle No
+                    <svg class="-mr-1 ml-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                      fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <button type="button"
+                    class="inline-flex ml-4 justify-center border border-gray-300 px-3 py-1 rounded-md px-1 -mr-1 bg-white text-smMain leading-5 font-normal text-gray-300 hover:text-gray-400"
+                    id="options-menu" aria-haspopup="true" aria-expanded="true">
+                    All Vehicles
+                    <svg class="-mr-1 ml-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                      fill="currentColor">
+                      <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <div class="ml-auto"><img src="images/clouddownload.svg" alt=""
+                      class="inline-block mr-4 w-8 h-8" /><img src="images/kebabmenu.svg" alt=""
+                      class="inline-block w-8 h-8 " /> </div>
+                </div>
+                <p class=" text-smMain text-gray-400 font-medium mt-3">My cabs mostly booked on: Monday <span
+                    class="font-normal">at</span> 10am <span class="font-normal">and</span> 7pm, Wednesday <span
+                    class="font-normal">at</span> 10am, Thursday <span class="font-normal">at</span> 9pm, Saturday <span
+                    class="font-normal">and</span> Sunday <span class="font-normal">at</span> 5pm </p>
+              </div>
+              <div class="p-4 flex-grow">
+                <div class="px-2 py-2">
+                  <table class="w-full">
+                    <tbody>
+                      <tr>
+                        <td colspan="12" class="text-center">
+                          <span
+                            class="   inline-block bg-black rounded-lg mx-auto mb-5  mt-2 text-white  text-smMain font-normal text-center px-2.5 py-2">
+                            <img src="images/moon.svg" alt="" class="inline-block mr-1" />
+                            In Night</span>
+                        </td>
+                        <td colspan="12" class="text-center">
+                          <span
+                            class="   inline-block bg-yellow-300 rounded-lg mx-auto mb-5 mt-2 text-white  text-smMain font-normal text-center px-2.5 py-2">
+                            <img src="images/sun.svg" alt="" class="inline-block mr-1" />
+                            In Day</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="text-smMain text-gray-400 font-normal">Mon</span>
+                        </td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="text-smMain text-gray-400 font-normal">Tue</span>
+                        </td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full pt-6mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="text-smMain text-gray-400 font-normal">Wed</span>
+                        </td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="text-smMain text-gray-400 font-normal">Thu</span>
+                        </td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="text-smMain text-gray-400 font-normal">Fri</span>
+                        </td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="text-smMain text-gray-400 font-normal">Sat</span>
+                        </td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="text-smMain text-gray-400 font-normal">Sun</span>
+                        </td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                        <td><span class="w-5 h-5 block bg-gray-200 rounded-full mx-auto my-1.5"></span></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="text-smMain text-gray-400 font-normal"></span>
+                        </td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">12am</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">1am</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">2am</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">3am</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">4am</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">5am</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">6am</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">7am</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">8am</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">9am</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">10am</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">11am</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">12pm</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">1pm</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">2pm</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">3pm</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">4pm</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">5pm</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">6pm</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">7pm</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">8pm</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">9pm</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">10pm</span></td>
+                        <td><span class="text-smMain text-gray-400 font-normal block ">11pm</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+                </div>
+              </div>
+            </div>
+            <div class=" flex mt-6">
+              <div class="flex items-center bg-white shadow rounded-lg w-1/2 mr-3 h-52">
+                <img src="images/graphimagenew.png" alt="" class="w-full h-full object-cover rounded-lg" />
+              </div>
+              <div class="flex   bg-white shadow rounded-lg w-1/2 ml-3 h-52">
+                <div class="inline-flex flex-shrink-0 items-center justify-center h-full w-1/2  mr-2 "
+                  style="background-color:#898CF6 ;">
+                  <img src="images/staticsgraph.png" alt="">
+                </div>
+                <div class="text-center w-full ">
+                  <div class=" flex">
+                    <div class="w-1/2 border-b border-r border-gray-100">
+                      <span class="block text-3xl font-bold pt-6">250</span>
+                      <span class="block text-gray-500 text-smMain pt-1 pb-4">Total Taxis</span>
+                    </div>
+                    <div class="w-1/2 border-b border-gray-100">
+                      <span class="block text-3xl font-bold pt-6">120</span>
+                      <span class="block text-gray-500 text-smMain pt-1 pb-4">Active Taxis</span>
+                    </div>
+                  </div>
+                  <div class=" flex">
+                    <div class="w-1/2 border-r border-gray-100">
+                      <span class="block text-3xl font-bold pt-6">50</span>
+                      <span class="block text-gray-500 text-smMain pt-1 pb-4">Breakdown</span>
+                    </div>
+                    <div class="w-1/2">
+                      <span class="block text-3xl font-bold pt-6">80</span>
+                      <span class="block text-gray-500 text-smMain pt-1 pb-4">Unused Taxis</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col md:row-span-3 lg:col-span-1 col-span-3">
+            <div class="flex flex-col   bg-white shadow rounded-lg mb-5">
+              <div class="flex items-center justify-between px-6 py-5 font-semibold border-b border-gray-100">
+                <span class="text-smMain text-gray-400 font-medium">Live Tracking</span>
+                <button type="button"
+                  class="inline-flex ml-3 justify-center border border-gray-300 px-2 py-1 rounded-md px-1 -mr-1 bg-white text-smMain leading-5 font-normal text-gray-300 hover:text-gray-400"
+                  id="options-menu" aria-haspopup="true" aria-expanded="true">
+                  New York
+                  <svg class="-mr-1 ml-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+              <div class="">
+                <img src="images/livetrackingimage.png" alt="" class="w-full" />
+              </div>
+            </div>
+            <div class="flex flex-col   bg-white shadow rounded-lg">
+              <div class="flex items-center justify-between px-6 py-5 font-semibold border-b border-gray-100">
+                <span class="text-smMain text-gray-400 font-medium">Messages</span>
+                <button type="button"
+                  class="inline-flex ml-3 justify-center border border-gray-300 px-2 py-1 rounded-md px-1 -mr-1 bg-white text-smMain leading-5 font-normal text-gray-300 hover:text-gray-400"
+                  id="options-menu" aria-haspopup="true" aria-expanded="true">
+                  See All
+
+                </button>
+                <!-- Refer here for full dropdown menu code: https://tailwindui.com/components/application-ui/elements/dropdowns -->
+              </div>
+              <div class="overflow-y-auto" style="max-height: 25rem;">
+                <ul class="p-6 space-y-6">
+                  <li class="flex items-center">
+
+                    <div class="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
+                      <img src="https://randomuser.me/api/portraits/women/82.jpg" alt="Annette Watson profile picture">
+                    </div>
+                    <div><span class="text-gray-600 text-sm font-medium">Benjamin Bailey</span>
+                      <span class="text-smMain text-gray-400 font-normal block truncate">On my way home...</span>
+                    </div>
+                    <div class="ml-auto "><span class="text-smMain text-gray-400 font-normal">10mins</span></div>
+
+
+                  </li>
+                  <li class="flex items-center">
+                    <div class="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
+                      <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="Calvin Steward profile picture">
+                    </div>
+                    <div><span class="text-gray-600 text-sm font-medium">Benjamin Bailey</span>
+                      <span class="text-smMain text-gray-400 font-normal block truncate">On my way home...</span>
+                    </div>
+                    <div class="ml-auto "><span class="text-smMain text-gray-400 font-normal">10mins</span></div>
+
+                  </li>
+                  <li class="flex items-center">
+                    <div class="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
+                      <img src="https://randomuser.me/api/portraits/men/80.jpg" alt="Ralph Richards profile picture">
+                    </div>
+                    <div><span class="text-gray-600 text-sm font-medium">Benjamin Bailey</span>
+                      <span class="text-smMain text-gray-400 font-normal block truncate">On my way home...</span>
+                    </div>
+                    <div class="ml-auto "><span class="text-smMain text-gray-400 font-normal">10mins</span></div>
+
+                  </li>
+                  <li class="flex items-center">
+                    <div class="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
+                      <img src="https://randomuser.me/api/portraits/men/79.jpg" alt="Bernard Murphy profile picture">
+                    </div>
+                    <div><span class="text-gray-600 text-sm font-medium">Benjamin Bailey</span>
+                      <span class="text-smMain text-gray-400 font-normal block truncate">On my way home...</span>
+                    </div>
+                    <div class="ml-auto "><span class="text-smMain text-gray-400 font-normal">10mins</span></div>
+
+                  </li>
+                  <li class="flex items-center">
+                    <div class="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
+                      <img src="https://randomuser.me/api/portraits/women/78.jpg"
+                        alt="Arlene Robertson profile picture">
+                    </div>
+                    <div><span class="text-gray-600 text-sm font-medium">Benjamin Bailey</span>
+                      <span class="text-smMain text-gray-400 font-normal block truncate">On my way home...</span>
+                    </div>
+                    <div class="ml-auto "><span class="text-smMain text-gray-400 font-normal">10mins</span></div>
+
+                  </li>
+                  <li class="flex items-center">
+                    <div class="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
+                      <img src="https://randomuser.me/api/portraits/women/77.jpg" alt="Jane Lane profile picture">
+                    </div>
+                    <div><span class="text-gray-600 text-sm font-medium">Benjamin Bailey</span>
+                      <span class="text-smMain text-gray-400 font-normal block truncate">On my way home...</span>
+                    </div>
+                    <div class="ml-auto "><span class="text-smMain text-gray-400 font-normal">10mins</span></div>
+
+                  </li>
+                  <li class="flex items-center">
+                    <div class="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
+                      <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Pat Mckinney profile picture">
+                    </div>
+                    <div><span class="text-gray-600 text-sm font-medium">Benjamin Bailey</span>
+                      <span class="text-smMain text-gray-400 font-normal block truncate">On my way home...</span>
+                    </div>
+                    <div class="ml-auto "><span class="text-smMain text-gray-400 font-normal">10mins</span></div>
+
+                  </li>
+                  <li class="flex items-center">
+                    <div class="h-10 w-10 mr-3 bg-gray-100 rounded-full overflow-hidden">
+                      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Norman Walters profile picture">
+                    </div>
+                    <div><span class="text-gray-600 text-sm font-medium">Benjamin Bailey</span>
+                      <span class="text-smMain text-gray-400 font-normal block truncate">On my way home...</span>
+                    </div>
+                    <div class="ml-auto "><span class="text-smMain text-gray-400 font-normal">10mins</span></div>
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+    <script>
+         function ShowDiv11() { 
+        var x = document.getElementById("menu");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+    </script>
+  </body>
+  <!-- partial -->
+
+
+
+</html>

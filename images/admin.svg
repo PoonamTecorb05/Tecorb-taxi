@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+  <g id="admin" transform="translate(10001 3598)">
+    <g id="Group_80634" data-name="Group 80634" transform="translate(0 19)">
+      <g id="Group_80633" data-name="Group 80633">
+        <g id="Rectangle_55" data-name="Rectangle 55" transform="translate(-10001 -3617)" fill="rgba(255,255,255,0)" stroke="rgba(112,112,112,0)" stroke-width="1">
+          <rect width="13" height="13" stroke="none"/>
+          <rect x="0.5" y="0.5" width="12" height="12" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="avatar_6_" data-name="avatar (6)" transform="translate(-10052.857 -3597.152)">
+      <g id="Group_80597" data-name="Group 80597" transform="translate(55.829 0)">
+        <g id="Group_80596" data-name="Group 80596" transform="translate(0)">
+          <circle id="Ellipse_16" data-name="Ellipse 16" cx="2.528" cy="2.528" r="2.528" fill="#7577f6"/>
+        </g>
+      </g>
+      <g id="Group_80599" data-name="Group 80599" transform="translate(53.895 5.652)">
+        <g id="Group_80598" data-name="Group 80598" transform="translate(0)">
+          <path id="Path_616" data-name="Path 616" d="M58.357,256a4.462,4.462,0,0,0-4.462,4.462,1.19,1.19,0,0,0,1.19,1.19h6.544a1.19,1.19,0,0,0,1.19-1.19A4.462,4.462,0,0,0,58.357,256Z" transform="translate(-53.895 -256)" fill="#7577f6"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
